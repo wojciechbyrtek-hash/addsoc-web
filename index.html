@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="addsoc — zaawansowane projektowanie urządzeń AMD/Xilinx MPSoC.">
+  <title>addsoc — Embedded intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="addsoc home">
+      <span class="brand-mark" aria-hidden="true"><span class="logo-a">a</span></span>
+      <span>addsoc</span>
+    </a>
+    <nav class="nav" aria-label="Główna nawigacja">
+      <a href="#expertise" data-i18n="navExpertise">Kompetencje</a>
+      <a href="#projects" data-i18n="navProjects">Projekty</a>
+      <a href="#contact" data-i18n="navContact">Kontakt</a>
+    </nav>
+    <div class="language-switcher">
+      <button class="language-current" id="language-current" type="button" aria-haspopup="listbox" aria-expanded="false">
+        <span class="flag flag-pl" aria-hidden="true"></span><span id="language-label">PL</span><span class="chevron" aria-hidden="true"></span>
+      </button>
+      <div class="language-menu" id="language-menu" role="listbox" aria-label="Wybierz język" hidden>
+        <button class="language-option selected" type="button" role="option" aria-selected="true" data-lang="pl"><span class="flag flag-pl" aria-hidden="true"></span> PL</button>
+        <button class="language-option" type="button" role="option" aria-selected="false" data-lang="en"><span class="flag flag-en" aria-hidden="true"></span> EN</button>
+        <button class="language-option" type="button" role="option" aria-selected="false" data-lang="de"><span class="flag flag-de" aria-hidden="true"></span> DE</button>
+        <button class="language-option" type="button" role="option" aria-selected="false" data-lang="zh-TW"><span class="flag flag-tw" aria-hidden="true"></span> 繁中</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span><span data-i18n="eyebrow">Inżynieria systemów embedded</span></p>
+        <h1 data-i18n="heroTitle">Detekcja.<br><em><span class="signal-title">Spektrum.</span></em><br>Precyzja.</h1>
+        <p class="hero-description" data-i18n="heroDescription">Projektujemy zaawansowane urządzenia oparte na adaptacyjnych układach SoC, FPGA i SOM — od architektury sprzętowej po gotowe przetwarzanie w czasie rzeczywistym.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#contact"><span data-i18n="heroButton">Kontakt</span><span class="arrow">↗</span></a>
+          <a class="text-link" href="#projects"><span data-i18n="heroLink">Zobacz nasze obszary</span><span>↓</span></a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Techniczny szkic: dwa nachodzace kola sygnalowe wpisane w lagodny obrys litery a">
+        <svg class="sketch" viewBox="0 0 560 470" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <defs>
+            <filter id="ink" x="-12%" y="-12%" width="124%" height="124%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.011 0.014" numOctaves="2" seed="9" result="n"/>
+              <feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <path id="aShape" d="M302.49 57.04 L326.93 63.34 L339.66 66.23 L353.39 68.6 L363.54 69.65 L380.29 70.45 L390.6 70.37 L404.78 69.34 L418.1 67.7 L443.89 63.8 L455.8 64.26 L465.71 69.54 L470.33 77.88 L474.28 97.63 L474.48 113.42 L471.15 141.04 L465.39 171.29 L451.45 234.42 L444.93 265.05 L439.31 293.79 L436.47 311.07 L433.57 334.16 L432.87 345.11 L433.65 354.85 L435.66 360.15 L440.91 366.3 L443.95 369.19 L447.84 371.71 L451.26 373.01 L457.66 374.41 L462.05 374.82 L468.84 374.63 L475.74 373.92 L489.69 371.97 L496.33 371.3 L502.31 371.23 L505.64 371.79 L509.64 373.54 L511.2 375.12 L511.88 378.1 L511.46 381.5 L509.51 388.69 L507.56 392.39 L503.64 396.27 L499.07 399.05 L489.27 403.5 L481.87 406.16 L469.46 409.69 L456.17 412.92 L428.73 419.06 L414.89 421.6 L400.81 423.05 L391.19 422.93 L376.39 421.13 L367.93 419.05 L357.35 414.6 L348.18 409.27 L331.23 397.72 L321.97 392.62 L311.14 388.87 L302.35 387.72 L286.81 388.02 L276.6 389.54 L261.52 393.79 L246.6 399.35 L216.9 411.8 L201.87 417.42 L186.46 421.84 L175.81 423.57 L159.26 424.37 L149.69 423.61 L137.53 420.53 L126.83 416.15 L106.88 406.11 L97.07 400.39 L87.59 393.27 L81.6 387.13 L73.1 375.84 L68.71 368.17 L64.03 356.45 L60.62 344.6 L55.07 320.76 L52.66 308.39 L50.98 295.11 L50.58 285.35 L51.08 269.35 L52.09 259.56 L54.6 246.18 L57.79 233.67 L64.84 209.53 L68.9 197.2 L74.05 184.33 L78.57 175.23 L86.97 160.78 L92.71 152.23 L101.56 141.02 L110.56 130.88 L128.7 111.69 L138.21 102.2 L148.59 92.92 L156.38 86.94 L169.38 78.29 L177.47 73.7 L188.75 68.57 L199.46 64.61 L220.3 57.86 L230.34 54.61 L239.6 51.61 L245.01 49.86 L251.96 47.61 L255.04 46.61 L257.36 45.86 L258.13 45.61 L258.13 45.61 L259.04 45.85 L261.75 46.55 L265.37 47.48 L273.52 49.58 L279.86 51.21 L290.72 54.01 Z"/>
+            <clipPath id="aClip"><use href="#aShape"/></clipPath>
+            <mask id="bgMask"><use href="#aShape" fill="#fff"/><circle cx="428" cy="125" r="62" fill="#000"/></mask>
+            <clipPath id="sageClip"><circle cx="428" cy="125" r="62"/></clipPath>
+            <clipPath id="peachClip"><circle cx="275" cy="200" r="140"/></clipPath>
+            <filter id="blueify" x="-5%" y="-5%" width="110%" height="110%">
+              <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 1 0 0  0 1 0 0 0  0 0 0 1 0"/>
+            </filter>
+          </defs>
+          <g filter="url(#ink)">
+            <rect x="0" y="0" width="560" height="470" fill="#cac9d3" opacity=".42" mask="url(#bgMask)"/>
+            <g clip-path="url(#aClip)">
+              <circle cx="275" cy="200" r="140" fill="#dec9bd" style="mix-blend-mode:multiply"/>
+            </g>
+            <g clip-path="url(#sageClip)">
+              <circle cx="428" cy="125" r="62" fill="#b5c0b5" style="mix-blend-mode:multiply"/>
+              <image href="aliasing-signal.png" x="366" y="63" width="124" height="124" preserveAspectRatio="xMidYMid meet" style="mix-blend-mode:screen"/>
+              <text x="400" y="150" font-family="'DM Mono',monospace" font-size="12" letter-spacing="1" fill="#333" opacity=".4" transform="rotate(-12 400 150)">x[n]</text>
+            </g>
+            <g clip-path="url(#peachClip)" font-family="'DM Mono',monospace" font-size="12" letter-spacing="1" fill="#555" opacity=".3">
+              <text x="172" y="205" transform="rotate(-22 172 205)">VHDL</text>
+              <text x="270" y="225" transform="rotate(18 270 225)">VERILOG</text>
+              <text x="178" y="288" transform="rotate(-16 178 288)">HLS</text>
+              <text x="275" y="282" transform="rotate(24 275 282)">IP</text>
+            </g>
+            <g clip-path="url(#aClip)" font-family="'DM Mono',monospace" font-size="11" letter-spacing="1" fill="#555" opacity=".26">
+              <text x="100" y="230" transform="rotate(-6 100 230)">JS</text>
+              <text x="85" y="260" transform="rotate(-5 85 260)">TCL</text>
+              <text x="65" y="290" transform="rotate(-7 65 290)">PYTHON</text>
+              <text x="60" y="320" transform="rotate(-8 60 320)">C/C++</text>
+              <text x="98" y="350" font-size="15" transform="rotate(4 98 350)">LINUX</text>
+              <text x="100" y="372" transform="rotate(5 100 372)">HTML</text>            </g>
+          </g>
+          <g stroke="#555" fill="none" stroke-width="1" opacity=".55" shape-rendering="crispEdges">
+            <rect x="407.5" y="99.5" width="21" height="21"/>
+            <path d="M401 110h34M418 93v34"/>
+            <rect x="214.5" y="239.5" width="21" height="21"/>
+            <path d="M208 250h34M225 233v34"/>
+          </g>
+        </svg>
+        <div class="visual-label label-bottom">REAL-TIME<br><span>PROCESSING</span></div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <p data-i18n="intro">Łączymy świat sprzętu, sygnałów i oprogramowania, aby tworzyć rozwiązania, które działają dokładnie wtedy, kiedy są potrzebne.</p>
+    </section>
+
+    <section class="section expertise" id="expertise">
+      <div class="section-heading">
+        <p class="eyebrow"><span data-i18n="expertiseEyebrow">Kompetencje</span></p>
+        <h2 data-i18n="expertiseTitle">Technologia<br><em>bez kompromisów.</em></h2>
+      </div>
+      <div class="expertise-grid">
+        <article class="expertise-card">
+          <h3 data-i18n="cardOneTitle">SoC/FPGA</h3>
+          <p data-i18n="cardOneText">Projektowanie urządzeń i systemów embedded z wykorzystaniem układów programowalnych nowej generacji AMD/Xilinx MPSoC, Lattice Semiconductor.</p>
+        </article>
+        <article class="expertise-card">
+          <h3 data-i18n="cardTwoTitle">Przetwarzanie strumieniowe</h3>
+          <p data-i18n="cardTwoText">Wysokowydajne pipeline’y dla networkingu, sygnałów i danych przesyłanych w czasie rzeczywistym.</p>
+        </article>
+        <article class="expertise-card">
+          <h3 data-i18n="cardThreeTitle">Projektowanie bez kompromisów</h3>
+          <p data-i18n="cardThreeText">Od koncepcji i architektury, przez implementację FPGA/Linux embedded, aż po integrację i wdrożenie.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="project-intro">
+        <p class="eyebrow"><span data-i18n="projectsEyebrow">Doświadczenie</span></p>
+        <h2 data-i18n="projectsTitle">Sygnały,<br><em>które możesz zobaczyć.</em></h2>
+      </div>
+      <div class="project-list">
+        <div class="project-row"><span class="project-no">A /</span><strong data-i18n="projectOne">Modulacje analogowe i cyfrowe</strong><span class="project-arrow">↗</span></div>
+        <div class="project-row"><span class="project-no">B /</span><strong data-i18n="projectTwo">Przetwarzanie strumieniowe</strong><span class="project-arrow">↗</span></div>
+        <div class="project-row"><span class="project-no">C /</span><strong data-i18n="projectThree">Multicast i rozproszone systemy video</strong><span class="project-arrow">↗</span></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div>
+        <p class="eyebrow"><span data-i18n="contactEyebrow">Kontakt</span></p>
+        <h2 data-i18n="contactTitle">Zbudujmy coś<br><em>inteligentnego.</em></h2>
+      </div>
+      <div class="contact-links">
+        <a class="contact-email" href="tel:+48572338691">+48 572 338 691 <span>↗</span></a>
+        <a class="contact-email" href="mailto:w.byrtek@addsoc.com">w.byrtek@addsoc.com <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2025 addsoc</span>
+    <span data-i18n="footerText">Advanced embedded systems</span>
+    <span>🇵🇱 PL</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
