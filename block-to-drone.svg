@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500">
+  <rect x="0" y="0" width="700" height="500" fill="#dde1ea"/>
+  <g font-family="'DM Mono',monospace" font-size="16" font-weight="600" letter-spacing="1">
+    <g stroke="#3a3a3a" stroke-width="1.9">
+      <rect x="120" y="55" width="110" height="52" rx="3" fill="#dec9bd"/>
+      <rect x="120" y="185" width="110" height="52" rx="3" fill="#b5c0b5"/>
+      <rect x="280" y="45" width="120" height="48" rx="3" fill="#cac9d3"/>
+      <rect x="280" y="135" width="120" height="66" rx="3" fill="#bcd7e6"/>
+      <path d="M230 81 H260 V69 H280 M230 211 H260 V168 H280 M340 93 V135 M400 168 H460" fill="none"/>
+      <circle cx="150" cy="81" r="2.4" fill="#3a3a3a" stroke="none"/>
+      <circle cx="150" cy="211" r="2.4" fill="#3a3a3a" stroke="none"/>
+
+      <!-- RF antenna feeding the ADC -->
+      <path d="M62 42 V81 H120 M62 42 L46 22 M62 42 L78 22" fill="none"/>
+
+      <!-- DAC driving the radiating antenna below it -->
+      <path d="M155 237 V305 M138 305 H172" fill="none"/>
+    </g>
+    <text x="175" y="87" text-anchor="middle" fill="#2a2a2a">ADC</text>
+    <text x="175" y="217" text-anchor="middle" fill="#2a2a2a">DAC</text>
+    <text x="340" y="75" text-anchor="middle" fill="#2a2a2a">PMOD</text>
+    <text x="340" y="174" text-anchor="middle" fill="#2a2a2a">CPU</text>
+    <text x="62" y="102" text-anchor="middle" fill="#2a2a2a">RF</text>
+  </g>
+
+  <g fill="none" stroke="#368bb5" stroke-width="1.8" opacity=".8">
+    <path d="M36 57 A 30 30 0 0 1 36 27"/>
+    <path d="M26 63 A 42 42 0 0 1 26 21"/>
+    <path d="M137 258 A 24 24 0 0 0 137 288"/>
+    <path d="M127 250 A 36 36 0 0 0 127 296"/>
+    <path d="M173 258 A 24 24 0 0 1 173 288"/>
+    <path d="M183 250 A 36 36 0 0 1 183 296"/>
+  </g>
+
+  <path d="M460 168 C 530 168 480 295 420 335" fill="none" stroke="#368bb5" stroke-width="2.2" opacity=".85"/>
+  <circle cx="460" cy="168" r="3" fill="#368bb5"/>
+</svg>
