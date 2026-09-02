@@ -52,6 +52,10 @@ document.querySelectorAll(".language-option").forEach((option) => {
     document.documentElement.lang = lang;
     languageLabel.textContent = lang === "zh-TW" ? "繁中" : lang.toUpperCase();
     languageCurrent.querySelector(".flag").className = `flag flag-${lang === "zh-TW" ? "tw" : lang}`;
+    const footerFlag = document.querySelector("#footer-flag");
+    const footerLang = document.querySelector("#footer-lang");
+    if (footerFlag) footerFlag.className = `flag flag-${lang === "zh-TW" ? "tw" : lang}`;
+    if (footerLang) footerLang.textContent = languageLabel.textContent;
     document.querySelectorAll("[data-i18n]").forEach((element) => {
       const value = translations[lang][element.dataset.i18n];
       if (value !== undefined) element.innerHTML = value;
